@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Lyft</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow:300|Montserrat:300,400" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="first">
+				<div class="logo col-xs-8 "></div>
+				<div class="loader"></div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="second views"></div>
+			<div class="allLogos views col-xs-12">
+					<div class="logoRosa col-xs-12 "></div>
+					<div><h1>Lyfe</h1></div>
+
+					<div class="wrap">
+					  <a href="#" class="button">Log In</a>
+					  <a href="#" class="button2">Sing Up</a>
+					</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- vista registro numero -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="views third">
+				<div class="headerThird col-xs-12 ">
+					<div class="back col-xs-2">
+						<button class="btn-group btn-link btn-color-back btn-back-uno"><span class="fa fa-chevron-left"></span></button>
+					</div>
+					<div>
+						<h1 class="">Sing Up </h1>
+						<h4 class="">Join now for free ride credit</h4>
+						<hr>
+					</div>
+
+					<div class="container-fluid">
+							<div class="row ">
+								<div class="form-group col-xs-5">
+				            <select class="form-control" name="" id="country1">
+				            	<option value="0">Country</option>
+											<option value="+51">Perú</option>
+				              <option value="+52">México</option>
+				              <option value="+593">Ecuador</option>
+				              <option value="+1">EE.UU</option>
+				            </select>
+				          </div>
+
+				          <div class="input-group">
+				          	<span class="input-group-addon" id="basic-addon1"></span>
+				          	<input type="text" name="" class="form-control col-xs-7 inputNum" placeholder="Phone number" aria-describedby="basic-addon1" disabled="true">
+				          </div>
+
+							</div>
+
+							<div class="row">
+								<h5 class="col-xs-offset-1">We'll send a text to verify your phone</h5>
+							</div>
+
+							<div class="row">
+								<button id="btn-next" class="btn btn-block btn-color" disabled="true"> Next </button>
+							</div>
+
+							<div class="row">
+								<div id="codigo"></div>
+							</div>
+			      </div>
+				</div>
+			</div>
+		</div>
+	</div><!--container-fluid -->
+
+	<!--verificacion de codigo -->
+
+	<div class="container-fluid">
+		<div class="verifyView views">
+			<div class="row">
+				<div class="back col-xs-2">
+					<button class="btn-group btn-link btn-color-back btn-back-dos"><span class="fa fa-chevron-left"></span></button>
+				</div>
+				<div class="verify">
+					<h3 >Verify phone number </h3>
+					<h5 >Join now for free ride credit</h5>
+					<hr>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="verify-codigo col-xs-11 col-xs-offset-3">
+					<p class="lablab">LAB - </p><input type="text" name="codigo-lab" maxlength="3" id="codigo-input">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="resend col-xs-offset-3">
+					<p> Enter the code send to ... </p>
+					<button class="btn btn-ok">Resend Code</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="boxNext col-xs-10 col-xs-offset-1">
+				<button id="btn-next-verify" class="btn btn-block btn-color" disabled="true"> Next </button>
+				</div>
+			</div>
+
+		</div>
+	</div><!---container -->
+
+	<div class="container-fluid">
+		<div class="formuView views">
+			<div class="row">
+				<div class="back col-xs-2">
+					<button class="btn-group btn-link btn-color-back btn-back-tres"><span class="fa fa-chevron-left"></span></button>
+				</div>
+				<div>
+					<h1 class="">Sing Up </h1>
+					<h4 class="">Join now for free ride credit</h4>
+					<hr>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="formulario col-xs-10 col-xs-offset-1">
+					<div class="input-group">
+					  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+					  <input type="text" name="name" class="form-control" placeholder="First Name" aria-describedby="basic-addon1">
+					  <input type="text" name="lastName" class="form-control" placeholder="Last name">
+					</div>
+					<div class="input-group">
+					  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+					  <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+					</div>
+
+					<div class="check">
+						<div class="form-group">
+            <input type="checkbox" name="fancy-checkbox-danger-custom-icons" id="fancy-checkbox-danger-custom-icons" autocomplete="off" />
+            <div class="btn-group">
+                <label for="fancy-checkbox-danger-custom-icons" class="btn">
+                    I agree the <a href="#" class="terms">Terms of Service</a>
+                </label>
+            </div>
+        		</div>
+					<div class="boxNext">
+						<button id="btn-check" class="btn btn-block btn-color" disabled="true"> Next </button>
+					</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="finalView views">
+			<div class="row">
+				<div class="final">
+					<div class="logoRosa"></div>
+					<div><p class="finally">Finally !</p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!--scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/1affae7a95.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
