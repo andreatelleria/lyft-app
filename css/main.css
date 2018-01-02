@@ -1,28 +1,29 @@
-*{
-	margin: 0px; 
-	padding: 0px;
-	box-sizing: border-box; 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.first{
-	height: 100vh;
-	background: linear-gradient(-210deg, #530060, #E60A89);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow:hidden;
+.first {
+  height: 100vh;
+  background: linear-gradient(-210deg, #530060, #E60A89);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.logo{
-	background: url(../img/logo-white.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 10em;
-	z-index: 2
-
+.logo {
+  background: url(../img/logo-white.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 10em;
+  z-index: 2
 }
+
 /*Loader */
+
 .loader, .loader:before, .loader:after {
   background: #ffffff;
   -webkit-animation: load1 1s infinite ease-in-out;
@@ -30,6 +31,7 @@
   width: 1em;
   height: 4em;
 }
+
 .loader {
   color: #ffffff;
   text-indent: -9999em;
@@ -42,23 +44,25 @@
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
+
 .loader:before, .loader:after {
   position: absolute;
   top: 0;
   content: '';
 }
+
 .loader:before {
   left: -1.5em;
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
+
 .loader:after {
   left: 1.5em;
 }
+
 @-webkit-keyframes load1 {
-  0%,
-  80%,
-  100% {
+  0%, 80%, 100% {
     box-shadow: 0 0;
     height: 4em;
   }
@@ -67,10 +71,9 @@
     height: 5em;
   }
 }
+
 @keyframes load1 {
-  0%,
-  80%,
-  100% {
+  0%, 80%, 100% {
     box-shadow: 0 0;
     height: 4em;
   }
@@ -82,41 +85,42 @@
 
 /* second view*/
 
-.second{
-	height: 100vh;
-	background-image: url(../img/drivers.jpg);
-	background-size: cover;
-	background-position: center;
-	opacity: 0.6;
-
-	display: flex;
-}
-.allLogos{
-	position: absolute;
-	top: 10px;
-	display: none;
-	height: 90vh;
-	align-items: center;
-	justify-content: center;
-	opacity: 1;
-	z-index: 1;
-	outline:2px solid white: ;
+.second {
+  height: 100vh;
+  background-image: url(../img/drivers.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  display: flex;
 }
 
-.logoRosa{
-	background-image: url(../img/Lyft-Logo-rosado.png);
-	height: 30vh;
-	background-size: contain;
-	background-repeat: no-repeat;
-
+.allLogos {
+  position: absolute;
+  top: 10px;
+  display: none;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  z-index: 1;
+  outline: 2px solid white:;
 }
 
-.allLogos div h1{
-	color: #1e1636;
-	font-size: 3.5em;
-	opacity: 1;
+.logoRosa {
+  background-image: url(../img/Lyft-Logo-rosado.png);
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
+.allLogos div h1 {
+  color: #1e1636;
+  font-size: 3.5em;
+  opacity: 1;
+}
+
 /*botones*/
+
 .wrap {
   position: absolute;
   top: 80%;
@@ -162,132 +166,135 @@ a.button2:hover {
 
 /*Tercera vista*/
 
-.third{
-	background: #fff;
-	height: 90vh;
+.third {
+  background: #fff;
+  height: 90vh;
 }
 
-.back{
-	height: 4em;
-	display: inline-block;
-	margin-top: 2em;
+.back {
+  height: 4em;
+  display: inline-block;
+  margin-top: 2em;
 }
 
-.headerThird{
-	height: 20vh;
-	font-size: 1.5em;
-	font-family: 'Barlow', sans-serif;
-	color: #1e1636;
+.headerThird {
+  height: 20vh;
+  font-size: 1.5em;
+  font-family: 'Barlow', sans-serif;
+  color: #1e1636;
 }
 
-.headerThird h4{
-	margin-top: 0;
-}
-.btn-color-back{
-	color: #1e1636; 
-}
-.btn-color{
-	color: white; 
-	font-weight: bold;
-	background: #EA0B8C;
+.headerThird h4 {
+  margin-top: 0;
 }
 
-#codigo{
-	margin-top: 2em;
+.btn-color-back {
+  color: #1e1636;
 }
 
-#btn-ok{
-	width: 8em;
-	background: white;
-	color: #1e1636;
+.btn-color {
+  color: white;
+  font-weight: bold;
+  background: #EA0B8C;
+}
+
+#codigo {
+  margin-top: 2em;
+}
+
+#btn-ok {
+  width: 8em;
+  background: white;
+  color: #1e1636;
   box-shadow: #1e1636 0 0px 0px 2px inset;
 }
 
 /*Vista verificacion*/
 
-.verify{
-	margin-left: 3em; 
-	padding-left: 2em;
-	font-family: 'Barlow', sans-serif;
-	color: #1e1636;
+.verify {
+  margin-left: 3em;
+  padding-left: 2em;
+  font-family: 'Barlow', sans-serif;
+  color: #1e1636;
 }
 
-#codigo-input{
-	border-left: none;
-	border-right: none;
-	border-top: none;
-	border-bottom: 2px solid #1e1636;
-	width: 2.3em;
-}
-#codigo-input:focus{
-	outline: none;
-	color: #1e1636; 
-	font-size: 1.3em;
+#codigo-input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid #1e1636;
+  width: 2.3em;
 }
 
-.lablab{
-	display: inline-block;
-	font-size: 1.3em;
+#codigo-input:focus {
+  outline: none;
+  color: #1e1636;
+  font-size: 1.3em;
 }
 
-.verify-codigo{
-	font-family: 'Barlow', sans-serif;
-	color: #1e1636;
-	font-size: 1.2em;
+.lablab {
+  display: inline-block;
+  font-size: 1.3em;
 }
 
-.resend{
-	margin-top: 1.5em;
-	font-family: 'Barlow', sans-serif;
-	color: #1e1636;
-	font-size: 1em;
+.verify-codigo {
+  font-family: 'Barlow', sans-serif;
+  color: #1e1636;
+  font-size: 1.2em;
 }
 
-.resend button{
-	margin-top: 1em;
+.resend {
+  margin-top: 1.5em;
+  font-family: 'Barlow', sans-serif;
+  color: #1e1636;
+  font-size: 1em;
 }
 
-.btn-ok{
-	width: 8em;
-	background: white;
-	color: #1e1636;
+.resend button {
+  margin-top: 1em;
+}
+
+.btn-ok {
+  width: 8em;
+  background: white;
+  color: #1e1636;
   box-shadow: #1e1636 0 0px 0px 2px inset;
 }
 
-.boxNext{
-	margin-top: 5em;
+.boxNext {
+  margin-top: 5em;
 }
 
 /*Vista Formulario */
 
-.formuView{
-	font-family: 'Barlow', sans-serif;
-	color: #1e1636;
+.formuView {
+  font-family: 'Barlow', sans-serif;
+  color: #1e1636;
 }
 
-.terms{
-	text-decoration: none;
-	display: inline;
-	padding-left: 0px;
+.terms {
+  text-decoration: none;
+  display: inline;
+  padding-left: 0px;
 }
 
 /*Vista final*/
 
-.finalView{
-	font-family: 'Barlow', sans-serif;
-	color: #1e1636;
+.finalView {
+  font-family: 'Barlow', sans-serif;
+  color: #1e1636;
 }
 
-.final{
-	height: 100vh;
-	background: linear-gradient(-210deg, #530060, #E60A89);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow:hidden;
+.final {
+  height: 100vh;
+  background: linear-gradient(-210deg, #530060, #E60A89);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.finally{
-	color: #fff;
-	font-size: 2em;
+.finally {
+  color: #fff;
+  font-size: 2em;
 }
